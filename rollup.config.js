@@ -19,6 +19,11 @@ const onwarn = (warning, onwarn) =>
 
 export default {
 	client: {
+		watch: {
+			clearScreen: false,
+			// Add this line to your config
+			include: 'public/global.css',
+		},
 		input: config.client.input(),
 		output: config.client.output(),
 		plugins: [
